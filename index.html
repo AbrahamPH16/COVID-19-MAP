@@ -59,13 +59,14 @@
 
       const popup = new window.google.maps.InfoWindow()
 
-      function renderExtraData({confirmed,deaths, recovered,provincestate,countryregion}){
+      function renderExtraData({confirmed,deaths, recovered,provincestate,countryregion,lastupdate}){
           return `
           <div>
           <p> <strong> ${provincestate} - ${countryregion}</strong></p>
-          <p> <strong> confirmados: ${confirmed}</strong></p>
-          <p> <strong> muertes: ${deaths}</strong></p>
-          <p> <strong> recuperados: ${recovered}</strong></p>
+          <p> <strong> Confirmados: ${confirmed}</strong></p>
+          <p> <strong> Ruertes: ${deaths}</strong></p>
+          <p> <strong> Recuperados: ${recovered}</strong></p>
+          <p> <strong> Ultima fecha: ${lastupdate}</strong></p>
           </div>
           `
       }
