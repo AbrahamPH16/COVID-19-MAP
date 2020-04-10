@@ -66,6 +66,7 @@
           <p> <strong> Confirmados: ${confirmed}</strong></p>
           <p> <strong> Muertes: ${deaths}</strong></p>
           <p> <strong> Recuperados: ${recovered}</strong></p>
+          <p> <strong> Porcentaje de muerte en relacion a infectados: ${deaths / confirmed * 100} </strong>
           <p> <strong> Ultima actualizaci&oacute;n: ${lastupdate}</strong></p>
           </div>
           `
@@ -94,6 +95,7 @@
         })     
       }
     </script>
+    
     
 </body>
 </html>
